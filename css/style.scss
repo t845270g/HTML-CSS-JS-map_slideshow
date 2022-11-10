@@ -1,0 +1,41 @@
+*{margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;}
+// body{width: 100vw;height:100vh;display: flex;justify-content:center;align-items: center;}
+
+// .box{width:500px;height: 300px;border: 10px solid black;overflow: hidden;position: relative;}
+// .img{height: 100%;
+//     position: absolute;
+//     right: -250px;
+//     &:hover{cursor:grab;}
+//     &:active{cursor:grabbing;}}
+
+body {
+  // background-color: red;
+    width: 100vw;height:100vh;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+  }
+
+.box{
+    width:100%;height:100%;
+    overflow: hidden;
+    position: relative;//射程定萬點，用來調整圖片位置
+    &:hover{cursor:grab;};
+    &:active{cursor:grabbing;};
+
+}
+
+.img {
+    height: 100%;
+    user-select: none;
+    position: absolute;
+    // animation: infinite 1s 移動畫面 linear alternate;
+  }
+
+// @keyframes 移動畫面{
+//   from{transform: translate(0px,0px);}
+//   to{transform: translate(-500px,0px);}
+// }
+
